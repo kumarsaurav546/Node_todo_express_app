@@ -1,0 +1,52 @@
+/*#todo-table
+{
+    margin:auto;
+    width:50%;
+    padding:10px;
+    background-color: rgba(0,0,0,1);
+    border-radius:5px;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+#item{
+    text-align: center;
+    list-style-position: inside;
+}
+#input
+{
+    padding:5px;
+    width:200px;
+    margin:10px;
+    border-radius:10px;
+    outline:none;
+}*/
+body
+{
+    background-color:rgba(22, 136, 27, 0.2);
+}
+h1
+{
+    background: url(/assets/taskdeck_icon.png) no-repeat center;
+    margin-bottom: 0;
+    text-indent:-10000px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+li:hover{
+    text-decoration: line-through;
+    background: rgba(0,0,0,0.2);
+}

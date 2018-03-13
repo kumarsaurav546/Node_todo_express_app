@@ -1,0 +1,64 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Todo List app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="/assets/todo-list.js"></script>
+    <link rel="shortcut icon" type="image/png" href="/assets/taskdeck_icon.png" />
+</head>
+<body>
+    <center>
+    <div id="todo-table">
+        <center>
+            <img src="/assets/taskdeck_icon.png"/>
+            <h3>To-do List app.</h3>
+        </center>
+        <form>
+            <!-- Textfield with Floating Label -->
+        
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="sample3">
+                    <label class="mdl-textfield__label" for="sample3">Add a new item...</label>
+                </div>
+           
+
+            <!-- Colored raised button -->
+            <button type="submit"  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                Add Item
+            </button>
+
+        </form>
+        <!-- List items with avatar and action -->
+        <style>
+            .demo-list-action {
+                width: 300px;
+            }
+        </style>
+        <br>
+        <center><h5>Items</h5></center>
+        <!--<div class="demo-list-action mdl-list">-->
+            <ul>
+            <% for(var i=0;i<todos.length;i++){%>
+              <!-- <div class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">person</i>
+                        <span>--><li><%=todos[i].item%></li><!--</span>
+                    </span>
+                    <a class="mdl-list__item-secondary-action" href="#">
+                        <i class="material-icons">delete</i>
+                    </a>
+                </div>-->
+            <%}%>
+            </ul>
+        
+    <!--</div>-->
+    </center>
+</body>
+</html>
